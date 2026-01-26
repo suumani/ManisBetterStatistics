@@ -1,5 +1,7 @@
--- scripts/core/common.lua
+-- __ManisBetterStatistics__/scripts/core/common.lua
 local Common = {}
+
+local Boss = require("__Manis_definitions__/shared/demolisher_names.lua")
 
 Common.mobs = {
     biter = {"small-biter", "medium-biter", "big-biter", "behemoth-biter"},
@@ -14,6 +16,15 @@ if script.active_mods["space-age"] then
     Common.mobs.strafer = {"small-strafer-pentapod","medium-strafer-pentapod","big-strafer-pentapod"}
     Common.mobs.stomper = {"small-stomper-pentapod","medium-stomper-pentapod","big-stomper-pentapod"}
     Common.mobs.spawner = {"biter-spawner", "spitter-spawner","gleba-spawner","gleba-spawner-corpse"}
+end
+
+if script.active_mods["ManisBossDemolisher"] then
+    Common.mobs.manis_boss_demolisher_behemoth = {Boss.MANIS_BEHEMOTH, Boss.MANIS_BEHEMOTH_ALT}
+    Common.mobs.manis_boss_demolisher_speedstar = {Boss.MANIS_SPEEDSTAR_SMALL, Boss.MANIS_SPEEDSTAR_MEDIUM, Boss.MANIS_SPEEDSTAR_BIG, Boss.MANIS_SPEEDSTAR_BEHEMOTH }
+    Common.mobs.manis_boss_demolisher_speedstar_alt = {Boss.MANIS_SPEEDSTAR_SMALL_ALT, Boss.MANIS_SPEEDSTAR_MEDIUM_ALT, Boss.MANIS_SPEEDSTAR_BIG_ALT, Boss.MANIS_SPEEDSTAR_BEHEMOTH_ALT }
+    Common.mobs.manis_boss_demolisher_gigantic = {Boss.MANIS_GIGANTIC_SMALL, Boss.MANIS_GIGANTIC_MEDIUM, Boss.MANIS_GIGANTIC_BIG, Boss.MANIS_GIGANTIC_BEHEMOTH }
+    Common.mobs.manis_boss_demolisher_gigantic_alt = {Boss.MANIS_GIGANTIC_SMALL_ALT, Boss.MANIS_GIGANTIC_MEDIUM_ALT, Boss.MANIS_GIGANTIC_BIG_ALT, Boss.MANIS_GIGANTIC_BEHEMOTH_ALT }
+    Common.mobs.manis_boss_demolisher_crazy_king = {Boss.MANIS_CRAZY_KING, Boss.MANIS_CRAZY_KING_ALT}
 end
 
 if script.active_mods["ArmouredBiters"] then

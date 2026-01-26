@@ -1,10 +1,10 @@
 {
     "name": "ManisBetterStatistics",
-    "version": "0.0.1",
+    "version": "0.0.4",
     "factorio_version": "2.0",
     "title": "Mani's Better Statistics",
     "author": "suumani",
-    "description": "Enhance your gameplay with Mani's Better Statistics! This mod provides a detailed view of your enemies' kill counts, especially focusing on various qualities of hostile mobs. For the best experience, strongly recommended to use with the 'Quality for Biters' mod.",
+    "description": "Press 'Y' key to show statistics. In this mod, I focused on visualizing the kill count of hostile mobs. Especially since the introduction of the Quality attribute, it's become a bit harder to track how many enemies you've defeated.",
     "thumbnail": "thumbnail.png",
     "dependencies": [
         "base >= 2.0.0",
